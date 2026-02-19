@@ -202,29 +202,6 @@ The script will open the game window and display the agent’s performance.
 
 ---
 
-# Frequently Asked Questions
-
-## What if OCR recognition is inaccurate?
-
-- Adjust the binarization threshold (`cv2.threshold(gray, 200, 255, ...)` in `_ocr_digit` can be changed to 150 or 180).
-- Ensure the coordinate regions precisely contain only digits and not background.
-- Consider replacing EasyOCR with `pytesseract` or `paddleocr`.
-
----
-
-## What if the game window loses focus and inputs fail?
-
-- Ensure the game window remains in the foreground and is not minimized or covered by other windows.
-- Avoid performing other operations during training.
-
----
-
-## How does the anti-stuck mechanism work?
-
-If the mileage remains unchanged for `stuck_threshold` consecutive steps (default 10), the environment enters “stuck mode,” forcing the action to 0. If stuck mode continues for more than `stuck_terminate_threshold` steps (default 30), the episode is forcibly terminated. On the next `reset`, the game process will be killed and restarted to ensure full recovery.
-
----
-
 # Contribution
 
 Issues and pull requests are welcome!
