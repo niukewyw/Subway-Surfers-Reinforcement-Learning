@@ -1,0 +1,5 @@
+# 训练（假设数据集为 subway_dataset.h5）
+python offline_train.py --dataset subway_dataset.h5 --total_steps 200000 --gpu 0
+
+# 评估
+python evaluate.py
