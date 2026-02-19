@@ -1,4 +1,4 @@
-**The game executable (.exe) used in this project is sourced from: https://github.com/vinaymancha/Subway-Surfers-AI,can be executed locally directly**
+**The game executable (.exe) used in this project is sourced from: https://github.com/vinaymancha/Subway-Surfers-AI ,can be executed locally directly**
 
 # **Subway Surfers Reinforcement Learning Project**
 
